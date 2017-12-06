@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2E1910822FF143781BF83FE5 /* Pods_XiaoAnWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB909B125A33254FED5F44B /* Pods_XiaoAnWeather.framework */; };
+		AABDB10F1FD838EE00745E1F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABDB10E1FD838EE00745E1F /* MainViewController.swift */; };
+		AACFEE6E1FD7EFAF009F22B7 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACFEE6D1FD7EFAF009F22B7 /* ColorHelper.swift */; };
 		AAE7E7381FCFAB3000D07EDC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE7E7371FCFAB3000D07EDC /* WelcomeViewController.swift */; };
 		AAEA3EDE1FCFA971007030D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA3EDD1FCFA971007030D0 /* AppDelegate.swift */; };
 		AAEA3EE31FCFA971007030D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAEA3EE11FCFA971007030D0 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		65516D9C97AE02738A01527D /* Pods-XiaoAnWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaoAnWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-XiaoAnWeather/Pods-XiaoAnWeather.release.xcconfig"; sourceTree = "<group>"; };
+		AABDB10E1FD838EE00745E1F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AACFEE6D1FD7EFAF009F22B7 /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		AAE7E7371FCFAB3000D07EDC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		AAEA3EDA1FCFA970007030D0 /* XiaoAnWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiaoAnWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEA3EDD1FCFA971007030D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AACFEE6C1FD7EF74009F22B7 /* ExtensionHelper */ = {
+			isa = PBXGroup;
+			children = (
+				AACFEE6D1FD7EFAF009F22B7 /* ColorHelper.swift */,
+			);
+			path = ExtensionHelper;
+			sourceTree = "<group>";
+		};
 		AAEA3ED11FCFA970007030D0 = {
 			isa = PBXGroup;
 			children = (
@@ -72,10 +84,12 @@
 			children = (
 				AAEA3EDD1FCFA971007030D0 /* AppDelegate.swift */,
 				AAE7E7371FCFAB3000D07EDC /* WelcomeViewController.swift */,
+				AABDB10E1FD838EE00745E1F /* MainViewController.swift */,
 				AAEA3EE11FCFA971007030D0 /* Main.storyboard */,
 				AAEA3EE41FCFA971007030D0 /* Assets.xcassets */,
 				AAEA3EE61FCFA971007030D0 /* LaunchScreen.storyboard */,
 				AAEA3EE91FCFA971007030D0 /* Info.plist */,
+				AACFEE6C1FD7EF74009F22B7 /* ExtensionHelper */,
 			);
 			path = XiaoAnWeather;
 			sourceTree = "<group>";
@@ -212,7 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAEA3EDE1FCFA971007030D0 /* AppDelegate.swift in Sources */,
+				AACFEE6E1FD7EFAF009F22B7 /* ColorHelper.swift in Sources */,
 				AAE7E7381FCFAB3000D07EDC /* WelcomeViewController.swift in Sources */,
+				AABDB10F1FD838EE00745E1F /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

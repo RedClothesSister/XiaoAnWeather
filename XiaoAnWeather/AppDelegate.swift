@@ -15,7 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if (!UserDefaults.standard.bool(forKey: "firstLaunch")) {
+            self.window?.rootViewController = WelcomeViewController()
+            self.window?.makeKeyAndVisible()
+            UserDefaults.standard.set(true, forKey: "firstLaunch")
+        } else {
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let Main = main.instantiateViewController(withIdentifier: "Main")
+            self.window?.rootViewController = Main
+            self.window?.makeKeyAndVisible()
+            UserDefaults.standard.set(true, forKey: "firstLaunch")
+        }
+        
         return true
     }
 
